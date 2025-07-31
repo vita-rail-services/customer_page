@@ -1,0 +1,72 @@
+.station-page {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to right, #e6f0ff, #f2f9ff);
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.zone-title {
+  text-align: center;
+  font-size: 28px;
+  color: #003366;
+  margin-top: 80px;
+  margin-bottom: 30px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.station-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.station-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  justify-content: center;
+}
+
+.station-card {
+  background-color: #ffffff;
+  border: 2px solid #3399ff;
+  border-radius: 12px;
+  padding: 16px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: 500;
+  color: #003366;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0, 102, 204, 0.15);
+}
+
+.station-card:hover {
+  background-color: #3399ff;
+  color: #ffffff;
+  transform: scale(1.05);
+}
+
+.station-card-active {
+  background-color: #3399ff !important;
+  color: #ffffff !important;
+  /* transform: scale(1.05); */
+}
+
+.no-station {
+  text-align: center;
+  color: #888;
+  font-size: 18px;
+  margin-top: 30px;
+}
+
+@media (max-width: 600px) {
+  .zone-title {
+    font-size: 22px;
+  }
+
+  .station-card {
+    font-size: 16px;
+    padding: 14px;
+  }
+}

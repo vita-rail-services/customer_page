@@ -1,0 +1,207 @@
+.food-container {
+  min-height: 100vh;
+  background: linear-gradient(to right, #e0f7fa, #f1f8e9);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 20px;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.logo-container {
+  margin-bottom: 20px;
+}
+
+.logo {
+  height: 80px;
+}
+
+h2 {
+  color: #00796b;
+  font-size: 26px;
+  margin-bottom: 15px;
+}
+
+.selector {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 25px;
+}
+
+.selector button {
+  background-color: #ffffff;
+  border: 2px solid #80cbc4;
+  border-radius: 25px;
+  padding: 8px 18px;
+  font-size: 15px;
+  color: #00796b;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.selector button:hover {
+  background-color: #b2dfdb;
+}
+
+.selector button.active {
+  background-color: #00796b;
+  color: white;
+  border-color: #004d40;
+}
+
+.menu-items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 960px;
+  margin-bottom: 40px;
+}
+
+.item-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  padding: 16px 20px;
+  text-align: center;
+  transition: transform 0.2s ease;
+}
+
+.item-card:hover {
+  transform: translateY(-5px);
+}
+
+.item-card p {
+  font-weight: 500;
+  margin-bottom: 10px;
+  font-size: 15px;
+}
+
+.item-card .price {
+  font-weight: 600;
+  color: #388e3c;
+  font-size: 14px;
+  margin-left: 8px;
+}
+
+.item-card button {
+  background-color: #00796b;
+  color: white;
+  padding: 6px 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background 0.3s ease;
+}
+
+.item-card button:hover {
+  background-color: #004d40;
+}
+
+.cart {
+  width: 100%;
+  max-width: 480px;
+  background-color: #ffffff;
+  padding: 25px;
+  border-radius: 20px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  margin-bottom: 30px;
+}
+
+.cart h3 {
+  font-size: 20px;
+  margin-bottom: 15px;
+  color: #004d40;
+}
+
+.cart ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.cart li {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.cart .price {
+  margin-left: 10px;
+  color: #388e3c;
+  font-weight: 600;
+}
+
+.cart-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.cart-buttons button {
+  background-color: #e0f2f1;
+  color: #00796b;
+  border: none;
+  padding: 4px 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.cart-buttons button:hover {
+  background-color: #b2dfdb;
+}
+
+.cart-buttons .remove {
+  color: #c62828;
+  background-color: #ffebee;
+}
+
+.cart-buttons .remove:hover {
+  background-color: #ffcdd2;
+}
+
+.confirm-box {
+  margin-top: 20px;
+  text-align: center;
+}
+
+.proceed-btn {
+  background-color: #00796b;
+  color: white;
+  padding: 12px 30px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.proceed-btn:hover {
+  background-color: #004d40;
+}
+
+@media (max-width: 600px) {
+  .menu-items {
+    grid-template-columns: 1fr;
+  }
+
+  .item-card {
+    padding: 14px 16px;
+  }
+
+  .selector button {
+    padding: 7px 14px;
+    font-size: 14px;
+  }
+
+  .proceed-btn {
+    width: 100%;
+  }
+}
